@@ -1,6 +1,6 @@
-# BLSP-Emo: Towards Empathetic Large Language-Speech Models via Self-Alignment
+# BLSP-Emo: Towards Empathetic Large Language-Speech Models
 
-Chen Wang, Minpeng Liao, Zhongqiang Huang,Junhong Wu, Chenqing Zong, Jiajun Zhang
+Chen Wang, Minpeng Liao, Zhongqiang Huang, Junhong Wu, Chenqing Zong, Jiajun Zhang
 
 **Institute of Automation, Chinese Academy of Sciences**
 
@@ -8,14 +8,14 @@ Chen Wang, Minpeng Liao, Zhongqiang Huang,Junhong Wu, Chenqing Zong, Jiajun Zhan
 
 <a href='https://www.modelscope.cn/studios/Decaderan/Blsp-Qwen-7B-Demo/summary'><img src='https://img.shields.io/badge/ModelScope-Demo-blueviolet'></a>
 <a href=''><img src='https://img.shields.io/badge/ModelScope-Checkpoint-blueviolet'></a>
-<a href=''><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-blue'></a> <a href='https://cwang621.github.io/blsp-emo.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'> </a>
+<a href='https://huggingface.co/cwang621/blsp-emo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-blue'></a> <a href='https://cwang621.github.io/blsp-emo.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 **Note:** The modelscope demo page is build upon BLSP (without emotion supoort), we will update the internal model to BLSP-Emo as soon as possible.
 
 
 ## Introduction
 
-* BLSP-Emo is designed to enable an end-to-end speech-language model to understand emotions in speech and generate empathetic responses, using only existing ASR and SER data. 
+* BLSP-Emo is designed to enable an instruction-following LLM to understand both linguistic content and paralinguistic emotion cues in speech and generate empathetic responses, using only existing ASR and SER data. 
 * BLSP-Emo is built based on Whisper-large-v2 and Qwen-7B-Chat.
 
 ![architecture](figures/emotion_blsp.png)
@@ -40,7 +40,7 @@ pip install requirements.txt
 
 ### Prepare the pretrained BLSP checkpoint
 
-Download the pretrained BLSP model from [modelscope]() or [huggingface]().
+Download the pretrained BLSP model from [modelscope]() or [huggingface](https://huggingface.co/cwang621/blsp-emo).
 
 
 ### Inference & Evaluation
@@ -74,6 +74,7 @@ python3 generate.py \
     --use_emotion True
 ```
 
+We release the synthesized SpeechAlpaca at [Baidu YunPan](https://pan.baidu.com/s/19MLy_bbVtR0SFrOJL_oNEQ?pwd=tzid ) and [GoogleDrive](https://drive.google.com/file/d/1TycqRDPUwxV2jw985fBi8wVb-FC6ZIgc/view?usp=drive_link)
 
 ### Launching Demo Locally
 
