@@ -31,7 +31,7 @@ python -m torch.distributed.run --nproc_per_node=4 train.py \
     --blsp_model $blsp_path \
     --unfreeze_qwen True \
     --unfreeze_adapter True \
-    --loss_names "response_ce" \
+    --loss_names "input_er,response_ce" \
     \
     --disable_tqdm True \
     \
