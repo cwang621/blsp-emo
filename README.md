@@ -38,7 +38,7 @@ pip install requirements.txt
 ```
 
 
-### Prepare the pretrained BLSP checkpoint
+### Prepare the pretrained BLSP-Emo checkpoint
 
 Download the pretrained BLSP model from [modelscope](https://www.modelscope.cn/models/iic/Blsp-Emo-Qwen-7B/summary) or [huggingface](https://huggingface.co/cwang621/blsp-emo).
 
