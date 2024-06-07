@@ -173,7 +173,7 @@ python src/instruction_dataset.py offline \
     --use_emotion True
 ```
 
-3. train the BLSP-KD model
+3. train the BLSP-Emo model
 ```bash
 export blsp_path=~/pretrain_checkpoints
 export DATA_ROOT=examples/train/emotion_labels/processed
