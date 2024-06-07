@@ -10,8 +10,6 @@ Chen Wang, Minpeng Liao, Zhongqiang Huang, Junhong Wu, Chenqing Zong, Jiajun Zha
 <a href='https://www.modelscope.cn/models/iic/Blsp-Emo-Qwen-7B/summary'><img src='https://img.shields.io/badge/ModelScope-Checkpoint-blueviolet'></a>
 <a href='https://huggingface.co/cwang621/blsp-emo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-blue'></a> <a href='https://cwang621.github.io/blsp-emo.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='https://arxiv.org/abs/2406.03872'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
-**Note:** The modelscope demo page is build upon BLSP (without emotion supoort), we will update the internal model to BLSP-Emo as soon as possible.
-
 
 ## Introduction
 
