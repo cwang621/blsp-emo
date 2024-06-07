@@ -8,7 +8,7 @@ Chen Wang, Minpeng Liao, Zhongqiang Huang, Junhong Wu, Chenqing Zong, Jiajun Zha
 
 <a href='https://www.modelscope.cn/studios/Decaderan/Blsp-Qwen-7B-Demo/summary'><img src='https://img.shields.io/badge/ModelScope-Demo-blueviolet'></a>
 <a href='https://www.modelscope.cn/models/iic/Blsp-Emo-Qwen-7B/summary'><img src='https://img.shields.io/badge/ModelScope-Checkpoint-blueviolet'></a>
-<a href='https://huggingface.co/cwang621/blsp-emo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-blue'></a> <a href='https://cwang621.github.io/blsp-emo.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://huggingface.co/cwang621/blsp-emo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-blue'></a> <a href='https://cwang621.github.io/blsp-emo.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='https://arxiv.org/abs/2406.03872'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
 **Note:** The modelscope demo page is build upon BLSP (without emotion supoort), we will update the internal model to BLSP-Emo as soon as possible.
 
@@ -191,5 +191,12 @@ bash scripts/train_emotion.sh
 ## Citation
 If you find our project useful, hope you can star our repo and cite our paper as follows:
 ```
-@article
+@misc{wang2024blspemo,
+    title={BLSP-Emo: Towards Empathetic Large Speech-Language Models},
+    author={Chen Wang and Minpeng Liao and Zhongqiang Huang and Junhong Wu and Chengqing Zong and Jiajun Zhang},
+    year={2024},
+    eprint={2406.03872},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 ```
