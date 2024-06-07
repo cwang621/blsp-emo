@@ -53,8 +53,8 @@ instruction="Please identify the emotion tone of the speech provided below. Sele
 Speech: "
 
 python3 generate.py \
-    --input_file "test_iemocap.jsonl" \
-    --output_file "output_iemocap.jsonl" \
+    --input_file "examples/test/test_iemocap.jsonl" \
+    --output_file "examples/test/output_iemocap.jsonl" \
     --blsp_model $blsp_path \
     --instruction "$instruction" \
     --audio_field "audio" \
@@ -64,8 +64,8 @@ python3 generate.py \
 For SpeechAlpaca
 ```bash
 python3 generate.py \
-    --input_file "test_alpaca.jsonl" \
-    --output_file "output_alpaca.jsonl" \
+    --input_file "examples/test/test_alpaca.jsonl" \
+    --output_file "examples/test/output_alpaca.jsonl" \
     --blsp_model $blsp_path \
     --instruction "" \
     --audio_field "audio" \
@@ -100,7 +100,7 @@ export qwen_path=~/pretrained_models/qwen-7b-chat
 mkdir -p examples/train/cw_labels
 python -u emotion_text_generation.py generate \
     --qwen_path ${qwen_path} \
-    --manifest examples/train_gigaspeech.jsonl \
+    --manifest examples/train/train_gigaspeech.jsonl \
     --lab_dir examples/train/cw_labels \
     --instruction "Continue the following sentence in a coherent style: " \
     --nshard 1 \
@@ -140,7 +140,7 @@ bash scripts/train_pretrain.sh
 mkdir -p examples/train/emotion_labels
 python -u emotion_text_generation.py generate \
     --qwen_path ${qwen_path} \
-    --manifest examples/train_iemocap.jsonl \
+    --manifest examples/train/train_iemocap.jsonl \
     --lab_dir examples/train/emotion_labels \
     --nshard 1 \
     --rank 0 \
